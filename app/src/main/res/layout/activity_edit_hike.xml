@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CreateHiking"
+        android:gravity="left"
+        android:padding="30dp">
+
+
+
+        <TextView
+            android:id="@+id/title_hike"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Edit Hiking Record"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="30dp" />
+
+        <ImageView
+            android:id="@+id/img_hike"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/title_hike"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:background="@color/grey"/>
+
+        <Button
+            android:id="@+id/btn_select_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_hike"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="0dp"
+            android:text="Select Image" />
+
+        <TextView
+            android:id="@+id/tv_name_hike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/btn_select_image"
+            android:text="Name of Hike" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/edt_name_hike"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="text"-->
+<!--            android:textSize="16dp"-->
+<!--            android:layout_below="@+id/tv_name_hike"-->
+<!--            android:hint="Name" />-->
+        <Spinner
+            android:id="@+id/spinner_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_below="@+id/tv_name_hike"
+            android:paddingVertical="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_below="@+id/spinner_name"
+            android:text="Location" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/edt_location"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="text"-->
+<!--            android:textSize="16dp"-->
+<!--            android:layout_below="@+id/tv_location"-->
+<!--            android:hint="Location" />-->
+
+        <Spinner
+            android:id="@+id/spinner_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_below="@+id/tv_location"
+            android:paddingVertical="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_date_hike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_below="@+id/spinner_location"
+            android:text="Date of Hike" />
+
+        <EditText
+            android:id="@+id/edt_date_hike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:textSize="16dp"
+            android:focusable="false"
+            android:onClick="showDatePicker"
+            android:layout_below="@+id/tv_date_hike"
+            android:hint="DD/MM/YYYY" />
+
+        <TextView
+            android:id="@+id/tv_parking_available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@+id/edt_date_hike"
+            android:text="Parking Available" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGroup_parking_available"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_parking_available"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radio_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/tv_length_hike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below="@+id/radioGroup_parking_available"
+            android:text="Length of the Hike" />
+
+        <EditText
+            android:id="@+id/edt_length_hike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="16dp"
+            android:layout_below="@+id/tv_length_hike"
+            android:text="Length (e.g., 5km)" />
+
+        <TextView
+            android:id="@+id/tv_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_below="@+id/edt_length_hike"
+            android:text="Level of Difficulty" />
+
+<!--        <EditText-->
+<!--            android:id="@+id/edt_difficulty"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="text"-->
+<!--            android:textSize="16dp"-->
+<!--            android:layout_below="@+id/tv_difficulty"-->
+<!--            android:hint="Difficulty Level" />-->
+
+        <Spinner
+            android:id="@+id/spinner_difficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_below="@+id/tv_difficulty"
+            android:paddingVertical="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_below="@+id/spinner_difficulty"
+            android:text="Description" />
+
+        <EditText
+            android:id="@+id/edt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:textSize="16dp"
+            android:layout_below="@+id/tv_description"
+            android:hint="Description" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/edt_description"
+            android:layout_marginTop="16dp"
+            android:text="Save"
+            android:backgroundTint="#000"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+</ScrollView>

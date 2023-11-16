@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Add this line in your AndroidManifest.xml inside the <manifest> tag but outside the <application> tag -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_logo"
+        android:label="Hiking Application"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KHike"
+        tools:targetApi="31">
+        <activity
+            android:name=".Navigation"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"
+            />
+        <activity
+            android:name=".ChangePassword"
+            android:exported="false"
+            android:label="Change Password" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false"
+            android:label="Edit Profile" />
+        <activity
+            android:name=".EditExplore"
+            android:exported="false"
+            android:label="Edit Explore" />
+        <activity
+            android:name=".CreateExplore"
+            android:exported="false"
+            android:label="Create Explore" />
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Register"
+            android:exported="false"
+            android:label="Register"
+            android:parentActivityName=".Login"/>
+        <activity
+            android:name=".EditObservation"
+            android:exported="false"
+            android:label="Edit Observation" />
+        <activity
+            android:name=".Observation"
+            android:exported="false"
+            android:label="Observation" />
+        <activity
+            android:name=".EditHikeActivity"
+            android:exported="false"
+            android:label="Edit Hike" />
+        <activity
+            android:name=".CreateHiking"
+            android:exported="false"
+            android:label="Create Hike" />
+        <activity
+            android:name=".DetailHiking"
+            android:exported="false"
+            android:label="Detail Hike" />
+        <activity
+            android:name=".CreateObservation"
+            android:exported="false"
+            android:label="Create Observation" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="Home"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>

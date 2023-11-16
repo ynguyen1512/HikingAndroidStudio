@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_community"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/avatar_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/profile"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/CircularShapeAppearance" />
+
+        <TextView
+            android:id="@+id/name_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/avatar_img"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            android:text="Jason Nguyen"
+            android:layout_marginLeft="20dp"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/date_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_user"
+            android:layout_toRightOf="@+id/avatar_img"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:text="Oct 8"/>
+
+        <EditText
+            android:id="@+id/btn_follow"
+            android:inputType=""
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_below="@+id/name_user"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:textColorHint="#0370bf"
+            android:layout_toEndOf="@+id/date_post"
+            android:hint="Follow"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/btn_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_more"
+            android:text=""/>
+
+        <ImageView
+            android:id="@+id/img_main"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/btn_follow"
+            android:background="@drawable/border_img"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hikingbgg"/>
+
+        <TextView
+            android:id="@+id/name_hike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of Hiking"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_below="@+id/img_main"/>
+
+        <TextView
+            android:id="@+id/hike_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textStyle="italic"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/name_hike"
+            android:layout_below="@+id/img_main"/>
+
+        <TextView
+            android:id="@+id/btn_like_explore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hike_location"
+            android:layout_marginLeft="5dp"
+            android:text="Like"
+            android:textColor="#000"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/heart"
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <TextView
+            android:id="@+id/btn_cmt_explore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hike_location"
+            android:text="Comment"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/btn_like_explore"
+            android:drawableLeft="@drawable/comment"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

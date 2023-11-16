@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Hike Management</string>
+    <string name="title_home">Home</string>
+    <string name="title_community">Community</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_saved">Saved</string>
+    <string name="title_profile">Profile</string>
+    <string name="favorite">Favorite</string>
+    <string name="explore">Explore</string>
+    <string name="title_explore">title_explore</string>
+    <string name="camera">Camera</string>
+    <string name="navigation">Navigation</string>
+    <string name="map">Map</string>
+
+    //Name of the hike
+    <string-array name="name_hike">
+        <item>Select name of hike</item>
+        <item>Continental Divide Trail</item>
+        <item>Pacific Trail</item>
+        <item>John Muir Trail</item>
+        <item>Appalachian Trail</item>
+        <item>Great Himalaya</item>
+        <item>Add new name of hike</item>
+    </string-array>
+
+    //Locations create hike
+    <string-array name="locations">
+        <item>Select location</item>
+        <item>Ho Chi Minh</item>
+        <item>United States</item>
+        <item>Mexico</item>
+        <item>Canada</item>
+        <item>Australia</item>
+        <item>Add new location</item>
+    </string-array>
+
+
+    // Difficulty hike
+    <string-array name="difficulty_levels">
+        <item>Select difficult levels</item>
+        <item>Easy</item>
+        <item>Normal</item>
+        <item>Hard</item>
+    </string-array>
+
+    //Locations search
+    <string-array name="locations_search">
+        <item>Location</item>
+        <item>Ho Chi Minh</item>
+        <item>United States</item>
+        <item>Mexico</item>
+        <item>Canada</item>
+        <item>Australia</item>
+        <item>Singapore</item>
+        <item>Thailand</item>
+        <item>Cambodia</item>
+    </string-array>
+
+
+    // Length search
+    <string-array name="length_search">
+        <item>Length</item>
+    </string-array>
+
+    // Difficulty hike and search
+    <string-array name="difficulty_search">
+        <item>Difficulty</item>
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+    </string-array>
+
+
+</resources>

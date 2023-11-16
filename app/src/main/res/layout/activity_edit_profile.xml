@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    android:background="@drawable/top_background1"
+    tools:context=".EditProfile">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit Your Profile"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/title_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Full name"
+        android:layout_marginTop="50dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/title"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edt_fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Full name"
+        android:inputType="text"
+        android:layout_below="@+id/title_fullname"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/title_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_marginTop="30dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/edt_fullname"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:layout_below="@+id/title_username"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/title_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="30dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/edt_username"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="text"
+        android:layout_below="@+id/title_password"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/btn_change_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:backgroundTint="#000"
+        android:layout_below="@+id/edt_password"
+        android:paddingLeft="10dp"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_change_password"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#000"
+        android:layout_centerInParent="true"
+        android:text="Save"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linear_seekbar"
+        android:layout_width="wrap_content"
+        android:minWidth="200dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:paddingVertical="10dp"
+        android:background="@drawable/custom_rounded_boxshadow"
+        >
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:thumb="@drawable/custom_thumb"/>
+
+        <TextView
+            android:id="@+id/txt_percent_length"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="50 km"
+            android:textSize="18sp"
+            android:layout_marginTop="7dp" />
+    </LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_hike"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    >
+    <ImageView
+        android:id="@+id/img_explore"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/grey"
+        android:scaleType="centerCrop"
+        android:contentDescription="TODO" />
+
+    <Button
+        android:id="@+id/select_image_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_explore"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="21dp"
+        android:backgroundTint="@color/black"
+        android:padding="15dp"
+        android:text="Select Image"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edt_name_explore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_image_button"
+        android:inputType="text"
+        android:textColorHint="#000"
+        android:hint="Name of Explore"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/title_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_location_explore"
+        android:text="Date Create:"
+        android:textColor="#000"
+        android:paddingVertical="5dp"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/title_date_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_date"
+        android:text="Date Edit:"
+        android:paddingVertical="5dp"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"/>
+
+
+    <EditText
+        android:id="@+id/edt_location_explore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_name_explore"
+        android:inputType="text"
+        android:hint="Location"
+        android:textColorHint="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp"/>
+
+    <EditText
+        android:id="@+id/edt_date_explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_location_explore"
+        android:inputType="date"
+        android:text="22/01/2023"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/title_date"
+        android:paddingVertical="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <EditText
+        android:id="@+id/edt_date_edit_explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_date_explore"
+        android:inputType="date"
+        android:text="22/01/2023"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/title_date"
+        android:paddingVertical="5dp"
+        android:layout_marginLeft="5dp"/>
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_date_edit_explore"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/black"
+        android:padding="15dp"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>

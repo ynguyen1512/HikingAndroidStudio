@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditObservation">
+
+
+    <ImageView
+        android:id="@+id/img_observation"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/grey"
+        android:scaleType="centerCrop"/>
+
+    <Button
+        android:id="@+id/btn_select_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_observation"
+        android:text="Select Image"
+        android:backgroundTint="#000"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/txt_name_observation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_select_image"
+        android:text="Observation"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/title_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name_observation"
+        android:text="Date Created:"
+        android:textColor="#000"
+        android:paddingVertical="5dp"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/txt_date_observation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name_observation"
+        android:text="22/01/2023"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/title_date"
+        android:paddingVertical="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/title_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name_observation"
+        android:layout_toRightOf="@+id/txt_date_observation"
+        android:text="Time Created:"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingVertical="5dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_time_observation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_name_observation"
+        android:text="11:20:00"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/title_time"
+        android:paddingVertical="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/title_date_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_date"
+        android:text="Date Edit:"
+        android:layout_marginTop="20dp"
+        android:paddingVertical="5dp"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/txt_date_observation_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_date"
+        android:text="22/01/2023"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/title_date_edit"
+        android:paddingVertical="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/title_time_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_time"
+        android:layout_toRightOf="@+id/txt_date_observation"
+        android:text="Time Edit:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:paddingVertical="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_time_observation_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_time"
+        android:text="11:20:00"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/title_time_edit"
+        android:paddingVertical="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/title_date_edit">
+
+        <TextView
+            android:id="@+id/txt_title_obv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="#000"
+            android:paddingVertical="5dp"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/txt_des_obv"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginTop="20dp"
+            android:paddingVertical="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linear_layout2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_below="@+id/linear_layout">-->
+<!--        <EditText-->
+<!--            android:id="@+id/txt_note_obv_data2"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:inputType="text"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/txt_des_obv"-->
+<!--            android:textSize="16sp"-->
+<!--            android:text="Title"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/txt_note_obv_data1"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:inputType="text"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/txt_des_obv"-->
+<!--            android:layout_toRightOf="@+id/txt_note_obv_data2"-->
+<!--            android:textSize="16sp"-->
+<!--            android:text="Des"-->
+<!--            />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/edit_texts_container"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_below="@+id/linear_layout2">-->
+
+<!--    </LinearLayout>-->
+
+    <GridLayout
+        android:id="@+id/myGridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:layout_below="@+id/linear_layout"
+        android:columnCount="2"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/titleEditView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:inputType="text"
+            android:layout_columnWeight="1" />
+
+        <EditText
+            android:id="@+id/descriptionEditView"
+            android:layout_width="0dp"
+            android:inputType="text"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_columnWeight="1" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btn_Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="600dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#000"
+        android:text="Update"
+        android:textSize="16sp" />
+
+</RelativeLayout>

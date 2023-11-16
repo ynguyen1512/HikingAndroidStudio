@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_hike"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    >
+        <ImageView
+            android:id="@+id/img_observation"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@color/grey"
+            android:scaleType="centerCrop"/>
+
+        <Button
+            android:id="@+id/select_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Image"
+            android:backgroundTint="#000"
+            android:layout_below="@+id/img_observation"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/edt_name_observation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/select_image_button"
+            android:hint="Observation"
+            android:textColorHint="#000"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/title_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_name_observation"
+            android:text="Date:"
+            android:textColor="#000"
+            android:paddingVertical="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"/>
+
+        <EditText
+            android:id="@+id/edt_date_observation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_name_observation"
+            android:inputType="date"
+            android:text="22/01/2023"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/title_date"
+            android:paddingVertical="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/title_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_name_observation"
+            android:layout_toRightOf="@+id/edt_date_observation"
+            android:text="Time:"
+            android:textColor="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingVertical="5dp"
+            android:layout_marginLeft="72dp"/>
+
+        <EditText
+            android:id="@+id/edt_time_observation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_name_observation"
+            android:inputType="time"
+            android:text="11:20:00"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/title_time"
+            android:paddingVertical="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/txt_title_obv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:layout_below="@+id/title_date"
+            android:paddingVertical="5dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/txt_des_obv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_below="@+id/title_date"
+            android:paddingVertical="5dp"
+            android:layout_toRightOf="@+id/txt_title_obv"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="150dp"
+            android:visibility="gone"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txt_des_obv"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_add_observation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD OBSERVATION"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:layout_marginStart="0dp"
+            android:textAllCaps="false"
+            android:backgroundTint="#000"
+            android:drawablePadding="5dp"
+            android:layout_marginHorizontal="70dp"
+            android:layout_below="@+id/linear_layout"/>
+
+
+
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_add_observation"
+            android:text="Save"
+            android:backgroundTint="#000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>

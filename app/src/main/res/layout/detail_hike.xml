@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_hike"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/mountain"
+        android:scaleType="centerCrop"
+        android:alpha="0.6"/>
+
+    <TextView
+        android:id="@+id/txt_name_hike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/img_hike"
+        android:layout_alignBottom="@id/img_hike"
+        android:layout_marginLeft="29dp"
+        android:layout_marginBottom="104dp"
+        android:text="This is your destination"
+        android:drawablePadding="15dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_location_hike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/img_hike"
+        android:layout_alignBottom="@id/img_hike"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="74dp"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:text="Location here"
+        android:textColor="@color/black" />
+
+
+    <EditText
+        android:id="@+id/edt_level_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_hike"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:text="Level"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/txt_level_hike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_level_title"
+        android:text="Easy"
+        android:layout_marginLeft="22dp"
+        android:textSize="14sp" />
+
+
+
+    <EditText
+        android:id="@+id/edt_parking_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_hike"
+        android:layout_toRightOf="@id/edt_length_title"
+        android:layout_marginLeft="40dp"
+        android:text="Parking"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/txt_parking_hike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_length_title"
+        android:layout_toRightOf="@id/edt_length_title"
+        android:layout_marginLeft="42dp"
+        android:text="Yes"
+        android:textSize="14sp" />
+
+
+    <EditText
+        android:id="@+id/edt_date_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_hike"
+        android:layout_toRightOf="@id/edt_parking_title"
+        android:layout_marginLeft="40dp"
+        android:text="Date"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/txt_date_hike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_length_title"
+        android:layout_toRightOf="@id/edt_parking_title"
+        android:layout_marginLeft="40dp"
+        android:text="22/10/2023"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edt_length_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_hike"
+        android:layout_toRightOf="@id/edt_level_title"
+        android:layout_marginLeft="40dp"
+        android:text="Length"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/txt_length_hike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_length_title"
+        android:layout_toRightOf="@id/edt_level_title"
+        android:layout_marginLeft="40dp"
+        android:text="4.67 km"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:id="@+id/txt_des_hike"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/txt_level_hike"
+        android:layout_marginTop="20dp"
+        android:text="Description"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:paddingHorizontal="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_des_hike"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_modify_hike"
+            android:layout_width="120dp"
+            android:text="Edit"
+            android:backgroundTint="#000"
+            android:layout_height="60dp"
+            android:textSize="12dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp" />
+
+        <Button
+            android:id="@+id/btn_delete_hike"
+            android:layout_width="120dp"
+            android:text="Delete"
+            android:backgroundTint="#000"
+            android:layout_height="60dp"
+            android:textSize="12dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp" />
+
+        <Button
+            android:id="@+id/btn_observation_hike"
+            android:layout_width="130dp"
+            android:layout_height="60dp"
+            android:textSize="12dp"
+            android:backgroundTint="#000"
+            android:text="Observation"
+            android:layout_marginStart="5dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
